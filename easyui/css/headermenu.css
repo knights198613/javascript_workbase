@@ -1,6 +1,9 @@
 .headerMenu {
     position: absolute;
-    left: 10%;
+    left: 190px;
     bottom: 2px;
+    width:1200px;
+    display: inline;
+    overflow: hidden;
     /*background-color: #00ee00;*/
 }

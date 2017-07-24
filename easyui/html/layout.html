@@ -6,9 +6,10 @@
     <link rel="stylesheet" type="text/css" href="../css/demo.css" />
     <link rel="stylesheet" type="text/css" href="../css/headermenu.css" />
     <link rel="stylesheet" type="text/css" href="../widgets/wjheadermenu/css/wjheadermenu.css" />
-
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+
+    <script type="text/javascript" src="../widgets/wjheadermenu/js/jquery.wjheadermenu.js"></script>
     <meta charset="UTF-8">
     <title>Layout 测试</title>
 </head>
@@ -16,22 +17,38 @@
     <div id="cc" class="easyui-layout" fit="true">
         <div data-options="region:'north',split:true" style="height:100px;">
             <div class="headerMenu">
-                <div class="hdMenu">
-                    <a id="" class="hdmenuItem selected" target="" href="#">系统管理</a>
-                    <a id="" class="hdmenuItem" target="" href="#">系统管理系统管理</a>
-                    <a id="" class="hdmenuItem" target="" href="#">系统管理</a>
-                    <a id="" class="hdmenuItem" target="" href="#">系统管理</a>
-                    <a id="" class="hdmenuItem" target="" href="#">系统管理</a>
-                    <a id="" class="hdmenuItem" target="" href="#">系统管理</a>
-                    <a id="" class="hdmenuItem" target="" href="#">系统管理</a>
-                    <a id="" class="hdmenuItem" target="" href="#">系统管理</a>
+                <div class="menuContainer">
+                    <a id="" class="wjhdmenuItem" target="1" href="javascript:void(0)">系统管理</a>
+                    <a id="" class="wjhdmenuItem" target="2" href="javascript:void(0)">系统管理系统管理</a>
+                    <a id="" class="wjhdmenuItem" target="" href="javascript:void(0)">系统管理</a>
+                    <a id="" class="wjhdmenuItem" target="" href="javascript:void(0)">系统管理</a>
+                    <a id="" class="wjhdmenuItem" target="" href="javascript:void(0)">系统管理</a>
+                    <a id="" class="wjhdmenuItem" target="" href="javascript:void(0)">系统管理</a>
+                    <a id="" class="wjhdmenuItem" target="" href="javascript:void(0)">系统管理</a>
                 </div>
             </div>
         </div>
         <div data-options="region:'south',split:true" style="height:40px;"></div>
         <!--<div data-options="region:'east',title:'East',split:true" style="width:100px;"></div>-->
-        <div data-options="region:'west',title:' ',split:true" style="width:200px;"></div>
-        <div data-options="region:'center'" style="padding:5px;background:#eee;">
+        <div data-options="region:'west',title:' ',split:true" style="width:10%;">
+            <div class="leftMenu">
+                <div class="leftMenuPanel" id="1">
+                    <a class="leftMenuItem" id="">缓存管理</a>
+                    <a class="leftMenuItem" id="" href="">缓存管理</a>
+                    <a class="leftMenuItem" id="">缓存管理</a>
+                    <a class="leftMenuItem" id="">缓存管理</a>
+                    <a class="leftMenuItem" id="">缓存管理</a>
+                </div>
+                <div class="leftMenuPanel" id="2">
+                    <a class="leftMenuItem" id="">阈值管理</a>
+                    <a class="leftMenuItem" id="">阈值管理</a>
+                    <a class="leftMenuItem" id="">阈值管理</a>
+                    <a class="leftMenuItem" id="">阈值管理</a>
+                    <a class="leftMenuItem" id="">阈值管理</a>
+                </div>
+            </div>
+        </div>
+        <div data-options="region:'center'" style="padding:5px;background:#eee;width:90%;height: 100%" href="content.html">
             <p>sfslfjsflsjfkl</p>
             <p>sfslfjsflsjfkl</p>
             <p>sfslfjsflsjfkl</p>
@@ -50,8 +67,8 @@
             <p>sfslfjsflsjfkl</p>
             <p>sfslfjsflsjfkl</p>
             <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
+            <p>这是一段文字</p>
+            <p>我今天就不相信了额？</p>
             <p>sfslfjsflsjfkl</p>
             <p>sfslfjsflsjfkl</p>
             <p>sfslfjsflsjfkl</p>
@@ -87,3 +104,12 @@
     </div>
 </body>
 </html>
+
+<script type="text/javascript">
+    $(function() {
+        $(".wjhdmenuItem").wjheadermenu({'onclick':function(_target) {
+            //alert(_target);
+        }}, null);
+    });
+
+</script>

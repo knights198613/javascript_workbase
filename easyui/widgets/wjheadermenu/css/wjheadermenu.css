@@ -1,0 +1,31 @@
+.hdmenuItem:link {
+    color: white;
+}
+.hdmenuItem:hover {
+    color: blue;
+}
+.hdmenuItem:active {
+    color: black;
+    background-color: #bbbbbb;
+}
+
+.hdmenuItem {
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
+    font-size: 15px;
+    font-weight: 520;
+    color: white;
+    float: left;
+    display: inline-block;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #698cba;
+    padding: 5px 5px 0px 5px;
+}
+
+.hdmenuItem.selected {
+    color: black;
+    background-color: #bbbbbb;
+}
+
