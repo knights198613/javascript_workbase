@@ -1,0 +1,37 @@
+.leftMenuItem:link {
+    color: white;
+}
+.leftMenuItem:hover {
+    color: blue;
+}
+.leftMenuItem:active {
+    color: black;
+    background-color: #bbbbbb;
+}
+
+.leftMenuItem {
+    text-align: center;
+    text-decoration: none;
+    font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
+    font-size: 15px;
+    font-weight: 520;
+    color: black;
+    float: left;
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 5px 5px 0px 5px;
+    width:100%;
+    border-bottom: solid 1px cadetblue;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.leftMenuItem.selected {
+    color: black;
+    background-color: #bbbbbb;
+}
+
+.leftMenuPanel {
+    display: none;
+}
