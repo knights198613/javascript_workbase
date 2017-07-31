@@ -1,3 +1,4 @@
+/**顶部菜单**/
 .headerMenu {
     position: absolute;
     left: 190px;
@@ -6,4 +7,13 @@
     display: inline;
     overflow: hidden;
     /*background-color: #00ee00;*/
+}
+
+/**
+ * 左侧菜单样式
+ */
+.leftMenu {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }

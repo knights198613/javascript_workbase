@@ -24,8 +24,8 @@
     /**
      * 选中指定方法
      */
-    function selectedOne(target, param) {
-
+    function selectedFirst(target, param) {
+        $(target).first().trigger("click");
     };
 
     /**
@@ -43,14 +43,14 @@
      */
     $.fn.wjheadermenu = function(options, param) {
        if(typeof options == "string")
-           return $.fn.wjHeaderMenu.methods[options](this, param);
-       options = options || {};
+           return $.fn.wjheadermenu.methods[options](this, param);
+       param.options = param.options || {};
        return this.each(function() {
            var state = $(this).data("wjheadermenu");
            if(state) {
-              $(this).data("wjheadermenu", {options: $.extend({}, state.options, options)})
+              $(this).data("wjheadermenu", {options: $.extend({}, state.options, param.options)})
            }else {
-              $(this).data("wjheadermenu", {options: $.extend({}, $.fn.wjheadermenu.defaults, options)})
+              $(this).data("wjheadermenu", {options: $.extend({}, $.fn.wjheadermenu.defaults, param.options)})
            }
            create(this);
        });
@@ -61,11 +61,18 @@
         options: function(target, param) {
             return $(target).data("wjheadermenu");
         },
-        selectone: function(target, param) {
-
-        },
-        unselected: function(target, param) {
-
+        selectFirst: function(target, param) {
+            param.options = param.options || {};
+            target.each(function() {
+                var state = $(this).data("wjheadermenu");
+                if(state) {
+                    $(this).data("wjheadermenu", {options: $.extend({}, state.options, param.options)})
+                }else {
+                    $(this).data("wjheadermenu", {options: $.extend({}, $.fn.wjheadermenu.defaults, param.options)})
+                }
+                create(this);
+            });
+            selectedFirst(target);
         }
     };
     $.fn.wjheadermenu.defaults = {

@@ -4,12 +4,14 @@
     <link rel="stylesheet" type="text/css" href="../themes/default/easyui.css" />
     <link rel="stylesheet" type="text/css" href="../themes/icon.css" />
     <link rel="stylesheet" type="text/css" href="../css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="../css/headermenu.css" />
+    <link rel="stylesheet" type="text/css" href="../css/project.css" />
     <link rel="stylesheet" type="text/css" href="../widgets/wjheadermenu/css/wjheadermenu.css" />
+    <link rel="stylesheet" type="text/css" href="../widgets/wjleftmenu/css/wjleftmenu.css" />
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
 
     <script type="text/javascript" src="../widgets/wjheadermenu/js/jquery.wjheadermenu.js"></script>
+    <script type="text/javascript" src="../widgets/wjleftmenu/js/jquery.wjleftmenu.js"></script>
     <meta charset="UTF-8">
     <title>Layout 测试</title>
 </head>
@@ -20,31 +22,63 @@
                 <div class="menuContainer">
                     <a id="" class="wjhdmenuItem" target="1" href="javascript:void(0)">系统管理</a>
                     <a id="" class="wjhdmenuItem" target="2" href="javascript:void(0)">系统管理系统管理</a>
-                    <a id="" class="wjhdmenuItem" target="" href="javascript:void(0)">系统管理</a>
-                    <a id="" class="wjhdmenuItem" target="" href="javascript:void(0)">系统管理</a>
-                    <a id="" class="wjhdmenuItem" target="" href="javascript:void(0)">系统管理</a>
-                    <a id="" class="wjhdmenuItem" target="" href="javascript:void(0)">系统管理</a>
-                    <a id="" class="wjhdmenuItem" target="" href="javascript:void(0)">系统管理</a>
+                    <a id="" class="wjhdmenuItem" target="3" href="javascript:void(0)">系统管理</a>
+                    <a id="" class="wjhdmenuItem" target="4" href="javascript:void(0)">系统管理</a>
+                    <a id="" class="wjhdmenuItem" target="5" href="javascript:void(0)">系统管理</a>
+                    <a id="" class="wjhdmenuItem" target="6" href="javascript:void(0)">系统管理</a>
+                    <a id="" class="wjhdmenuItem" target="7" href="javascript:void(0)">系统管理</a>
                 </div>
             </div>
         </div>
-        <div data-options="region:'south',split:true" style="height:40px;"></div>
-        <!--<div data-options="region:'east',title:'East',split:true" style="width:100px;"></div>-->
-        <div data-options="region:'west',title:' ',split:true" style="width:10%;">
+
+        <div data-options="region:'west',title:' '" style="width:10%;">
             <div class="leftMenu">
-                <div class="leftMenuPanel" id="1">
-                    <a class="leftMenuItem" id="">缓存管理</a>
-                    <a class="leftMenuItem" id="" href="">缓存管理</a>
-                    <a class="leftMenuItem" id="">缓存管理</a>
-                    <a class="leftMenuItem" id="">缓存管理</a>
-                    <a class="leftMenuItem" id="">缓存管理</a>
+                <div class="leftMenuPanel" id="1" dest="1">
+                    <li class="leftMenuItem" url="content.html">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
+                    <li class="leftMenuItem">阈值管理</li>
                 </div>
-                <div class="leftMenuPanel" id="2">
-                    <a class="leftMenuItem" id="">阈值管理</a>
-                    <a class="leftMenuItem" id="">阈值管理</a>
-                    <a class="leftMenuItem" id="">阈值管理</a>
-                    <a class="leftMenuItem" id="">阈值管理</a>
-                    <a class="leftMenuItem" id="">阈值管理</a>
+                <div class="leftMenuPanel" id="2" dest="2">
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
+                    <li class="leftMenuItem">阈值管理1</li>
                 </div>
             </div>
         </div>
@@ -70,36 +104,7 @@
             <p>这是一段文字</p>
             <p>我今天就不相信了额？</p>
             <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
-            <p>sfslfjsflsjfkl</p>
+
         </div>
     </div>
 </body>
@@ -107,9 +112,12 @@
 
 <script type="text/javascript">
     $(function() {
-        $(".wjhdmenuItem").wjheadermenu({'onclick':function(_target) {
-            //alert(_target);
-        }}, null);
+        $(".wjhdmenuItem").wjheadermenu("selectFirst", {options:{'onclick':function(_target) {
+            $(".leftMenuPanel").wjleftmenu("showSelectedMenu", {target:_target});
+        }}});
+        $(".leftMenuPanel").wjleftmenu(null, {options:{'onclick':function(_url){
+            console.log(_url);
+        }}});
     });
 
 </script>
